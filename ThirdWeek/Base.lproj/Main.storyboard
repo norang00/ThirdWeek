@@ -206,18 +206,43 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="25s-0W-oae">
+                                <rect key="frame" x="0.0" y="414" width="393" height="404"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fr7-f7-lxt">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="b69-1b-pjI">
+                                        <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="dnP-D8-E9r">
+                                            <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="P95-YU-0cI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="0bh-n8-6D5" firstAttribute="top" secondItem="P95-YU-0cI" secondAttribute="top" id="64g-XU-VJf"/>
                             <constraint firstItem="0bh-n8-6D5" firstAttribute="leading" secondItem="P95-YU-0cI" secondAttribute="leading" id="BBZ-FP-JuX"/>
+                            <constraint firstItem="P95-YU-0cI" firstAttribute="trailing" secondItem="25s-0W-oae" secondAttribute="trailing" id="LgR-lQ-YIv"/>
+                            <constraint firstItem="25s-0W-oae" firstAttribute="top" secondItem="0bh-n8-6D5" secondAttribute="bottom" id="OCI-oo-ZnT"/>
                             <constraint firstItem="P95-YU-0cI" firstAttribute="trailing" secondItem="0bh-n8-6D5" secondAttribute="trailing" id="V5y-6b-DHS"/>
+                            <constraint firstItem="P95-YU-0cI" firstAttribute="bottom" secondItem="25s-0W-oae" secondAttribute="bottom" id="abr-GL-BWG"/>
+                            <constraint firstItem="25s-0W-oae" firstAttribute="leading" secondItem="P95-YU-0cI" secondAttribute="leading" id="j2a-Ny-nZR"/>
                             <constraint firstItem="0bh-n8-6D5" firstAttribute="bottom" secondItem="P95-YU-0cI" secondAttribute="bottom" constant="-404" id="mmM-Px-tSd"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="bannerCollectionView" destination="0bh-n8-6D5" id="qaQ-1l-8Ld"/>
+                        <outlet property="listCollectionView" destination="25s-0W-oae" id="siw-6k-NB5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rlo-c3-4ke" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
