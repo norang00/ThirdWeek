@@ -21,23 +21,23 @@ class Day11ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        userTextField1.tintColor = .systemMint
-        userTextField2.inputView = pickerView
-        
         setTextField()
         setPickerView()
         setMapView()
-        configureMapView()
     }
 
 }
 
+// MARK: - TextField 설정
 extension Day11ViewController: UITextFieldDelegate {
-    // 얘는 왜 데이터 소스 없지??
+    // 얘는 왜 데이터 소스 없지?? -> 데이터 소스 받아서 그릴만한 게 없으니까
     
     func setTextField() {
         userTextField1.delegate = self
+        
+        userTextField1.tintColor = .systemMint // 커서 색
+        userTextField2.inputView = pickerView
+
     }
     
     // 키보드에서 엔터키 클릭했을 때 (did end on exit 이랑 조금 다르다)
@@ -55,6 +55,7 @@ extension Day11ViewController: UITextFieldDelegate {
     
 }
 
+// MARK: - PickerView 설정
 extension Day11ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     
     func setPickerView() {
@@ -86,6 +87,7 @@ extension Day11ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     
 }
 
+// MARK: - MapView 설정
 extension Day11ViewController: MKMapViewDelegate {
     // MapKit 을 사용할 때
     // 1. 중간 지점을 어디로 할지
@@ -95,6 +97,8 @@ extension Day11ViewController: MKMapViewDelegate {
     
     func setMapView() {
         mapView.delegate = self
+        
+        configureMapView()
     }
     
     func configureMapView() {
