@@ -29,3 +29,12 @@ class test {
     // 요즘은 디바이스가 좋아서 사실 티도 안남. 그래도 알아두자
 
 }
+
+
+struct User {
+    let name: String = "고래밥"
+    static var nickname: String = "칙촉"
+    
+    func test1() {}
+    func test2() {}
+}
