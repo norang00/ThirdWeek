@@ -294,6 +294,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5c-Aj-hIy">
+                                <rect key="frame" x="159" y="249" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="oPB-rL-Z6i" kind="presentation" id="z6A-aj-cBk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UNp-ow-zXa"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -309,6 +318,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cE2-QC-dP0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-987.02290076335873" y="1564.7887323943662"/>
+        </scene>
+        <!--Setting-->
+        <scene sceneID="mYc-kJ-Tyj">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Setting" id="oPB-rL-Z6i" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vAG-50-hwT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-441" y="1415"/>
         </scene>
     </scenes>
     <resources>
