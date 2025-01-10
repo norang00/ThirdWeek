@@ -23,6 +23,7 @@ class sampleCollectionViewCell: UICollectionViewCell {
     }
     
     // 하위뷰가 다시 그려질때 실행해주는 함수...??
+    // 원래는 스크롤할때 뷰 재사용할때 (업데이트 할때) 불러짐
     override func layoutSubviews() {
         super.layoutSubviews()
         print(#function, "radius \(photoImageView.frame.width/2)")
@@ -33,6 +34,12 @@ class sampleCollectionViewCell: UICollectionViewCell {
     override func layoutIfNeeded() {
         super.layoutIfNeeded()
         print(#function, "radius \(photoImageView.frame.width/2)")
+    }
+    
+    override func draw(_ rect: CGRect) {
+        super.draw(rect)
+        print(#function, "radius \(photoImageView.frame.width/2)")
+
     }
 
 }
